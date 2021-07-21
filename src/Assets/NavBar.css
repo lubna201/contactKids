@@ -1,0 +1,270 @@
+.overall-navbar {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .nav-bar {
+      display: flex;
+      flex-direction: row;
+      margin: 1vh 7vw;
+    }
+    
+    .nav-left {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: flex-start;
+      z-index: 1;
+      cursor: pointer;
+    }
+    
+    .nav-right {
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    
+    .mg-right {
+      margin-right: 0.9vw;
+    }
+  
+    .mg-ham {
+      margin-right: 0.55vw;
+    }
+    
+    .icons {
+      font-size: 2.4vh;
+      z-index: 1;
+      cursor: pointer;
+    }
+    
+    .fb {
+      z-index: 1;
+      cursor: pointer;
+      font-size: 2.65vh;
+    }
+  
+    /* Hidden NavBar Items */
+  #nav-ham {
+    width: auto;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:5px;
+    z-index: 25;
+  }
+  .ham {
+    width: 23px;
+    height: 4.5px;
+    margin: 2px;
+    background-color: #262e42;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  #nav-ham span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  #nav-ham.Diam {
+    z-index: 30;
+  }
+  
+  #nav-ham.Diam .top {
+    transform: translateY(7px) translateX(0) rotate(45deg);
+    background: #fff;
+    z-index: 30;
+  }
+  #nav-ham.Diam .middle {
+    opacity: 0;
+  }
+  #nav-ham.Diam .bottom {
+    transform: translateY(-6.5px) translateX(0) rotate(-45deg);
+    background: #fff;
+    z-index: 30;
+  }
+  
+  .hiddenNav {
+    position: fixed;
+    background: #262e42;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+  }
+  .hiddenNav.hamburgerOpen {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100vh;
+    z-index: 25;
+  }
+  
+  .hiddenNav.hamburgerOpen li {
+    -webkit-animation: fadeInRight 0.5s ease forwards;
+    animation: fadeInRight 0.5s ease forwards;
+    -webkit-animation-delay: 0.35s;
+    animation-delay: 0.35s;
+  }
+  .hiddenNav.hamburgerOpen li:nth-of-type(2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  .hiddenNav.hamburgerOpen li:nth-of-type(3) {
+    -webkit-animation-delay: 0.45s;
+    animation-delay: 0.45s;
+  }
+  .hiddenNav.hamburgerOpen li:nth-of-type(4) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  .hiddenNav nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .hiddenNav .hamburger-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    margin-top: 1.1rem;
+  }
+  .hiddenNav .hamburger-menu .hamburger-menu-item {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+  }
+  .hiddenNav .hamburger-menu .hamburger-menu-item a {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 40px;
+    font-size: 33px;
+    font-family: "Montserrat";
+    font-weight: 500;
+  }
+  
+  .hiddenNav .hamburger-menu .hamburger-menu-item div {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 40px;
+    font-size: 33px;
+    font-family: "Montserrat";
+    font-weight: 500;
+  }
+  
+  .hiddenNav ul li .hm-hover1:hover:after,
+  .hiddenNav ul li .hm-hover1:focus:after,
+  .hiddenNav ul li .hm-hover1:active:after {
+    width: 58%;
+  }
+  .hiddenNav ul li .hm-hover2:hover:after,
+  .hiddenNav ul li .hm-hover2:focus:after,
+  .hiddenNav ul li .hm-hover2:active:after {
+    width: 63%;
+  }
+  .hiddenNav ul li .hm-hover3:hover:after,
+  .hiddenNav ul li .hm-hover3:focus:after,
+  .hiddenNav ul li .hm-hover3:active:after {
+    width: 100%;
+  }
+  .hiddenNav ul li .hm-hover4:hover:after,
+  .hiddenNav ul li .hm-hover4:focus:after,
+  .hiddenNav ul li .hm-hover4:active:after {
+    width: 100%;
+  }
+  .hiddenNav ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #fff;
+    transition: 0.35s;
+  }
+  
+  .hiddenNav ul li div:after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #fff;
+    transition: 0.35s;
+  }
+  
+  @-webkit-keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+    
+    @media screen and (max-width: 540.98px) {
+    }
+    
+    @media screen and (max-width: 540.98px) {
+      .logo {
+        width: 150px;
+        height: auto;
+      }
+    }
+    
+    @media screen and (max-width: 320.98px) {
+      .logo {
+        width: 125px;
+        height: auto;
+      }
+    }
+    
+    @media screen and (max-width: 280.98px) {
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+    }
+    
+    @media screen and (max-width: 240.98px) {
+      .logo {
+        width: 75px;
+        height: auto;
+      }
+    }

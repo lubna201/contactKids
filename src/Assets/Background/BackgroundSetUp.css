@@ -1,0 +1,159 @@
+/* General set-up CSS */
+.background-shapes {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* CSS for Triangle SVG size */
+.background-shapes .tri-svg {
+    width: 125px;
+    height: 125px;
+    opacity: 0.09;
+}
+
+/* Begin Initial Page CSS */
+.background-shapes #rec-s0-1 {
+    height: 100px;
+    width: 220px;
+    border-radius: 25%/50%;
+    opacity: 0.1;
+    position: absolute;
+    border: 3px solid #262E42;
+    transition: 1.6s ease;
+    left: 55vw;
+    transform: rotate(150deg);
+    top: -30vh;
+}
+    
+.background-shapes #rec-s0-2 {
+    position: absolute;
+    border: 3px solid #262E42;
+    transition: 1.6s ease;
+    height: 90px;
+    width: 150px;
+    border-radius: 25%/50%;
+    opacity: 0.1;
+    left: 50vw;
+    transform: rotate(25deg);
+    top: 112vh;
+}
+    
+.background-shapes #circle-s0 {
+    position: absolute;
+    border: 3px solid #262E42;
+    transition: 1.6s ease;
+    height: 75px;
+    width: 75px;
+    border-radius: 150px;
+    opacity: 0.1;
+    left: 105vw;
+    top: 7vh;
+}
+
+.background-shapes #tri-s0 {
+    position: absolute;
+    top: 140vh;
+    left: -20vw;
+}
+
+/* Ipad */
+@media screen and (max-width: 768.98px) {
+    /* CSS for Triangle SVG size */
+.background-shapes .tri-svg {
+    width: 150px;
+    height: 150px;
+}
+
+/* Begin Initial Page CSS */
+.background-shapes #rec-s0-1 {
+    height: 100px;
+    width: 220px;
+    border-radius: 25%/50%;
+    opacity: 0.1;
+    position: absolute;
+    border: 3px solid #262E42;
+    transition: 1.6s ease;
+    left: 55vw;
+    transform: rotate(150deg);
+    top: -30vh;
+}
+    
+.background-shapes #rec-s0-2 {
+    position: absolute;
+    border: 3px solid #262E42;
+    transition: 1.6s ease;
+    height: 90px;
+    width: 150px;
+    border-radius: 25%/50%;
+    opacity: 0.1;
+    left: 50vw;
+    transform: rotate(25deg);
+    top: 112vh;
+}
+    
+.background-shapes #circle-s0 {
+    position: absolute;
+    border: 3px solid #262E42;
+    transition: 1.6s ease;
+    height: 75px;
+    width: 75px;
+    border-radius: 150px;
+    opacity: 0.1;
+    left: 105vw;
+    top: 7vh;
+}
+
+.background-shapes #tri-s0 {
+    position: absolute;
+    top: 140vh;
+    left: -20vw;
+}
+
+}
+
+/* Surface Duo */
+@media screen and (max-width: 540.98px) {
+    /* CSS for Triangle SVG size */
+.background-shapes .tri-svg {
+    width: 120px;
+    height: 120px;
+}
+
+/* Begin Initial Page CSS */
+.background-shapes #rec-s0-1 {
+    height: 65px;
+    width: 130px;
+    border: 3px solid #262E42;
+    /* left: 40vw; */
+    left: -8vw; 
+    transform: rotate(150deg);
+    /* top: -20vh; */
+    top: 10vh; 
+}
+    
+.background-shapes #rec-s0-2 {
+    border: 4px solid #262E42;
+    height: 95px;
+    width: 180px;
+    left: 70vw;
+    transform: rotate(25deg);
+    top: 100vh;
+}
+    
+.background-shapes #circle-s0 {
+    border: 3px solid #262E42;
+    height: 90px;
+    width: 90px;
+    left: 105vw;
+    top: 15vh;
+}
+
+.background-shapes #tri-s0 {
+    top: 70vh;
+    left: -5vw;
+}
+
+}
