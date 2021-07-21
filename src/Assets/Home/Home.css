@@ -8,8 +8,20 @@
     background-color: #F3F3F3;
 }
 .cardstyle{
-    height: 100%;
+    height: 100%s;
     margin-left: 2%;
     background-image: linear-gradient(25deg, #d6d6d6, #f8f8ee,#c7c3c3);
-    z-index: -1;
+}
+body{
+    background-color: #F3F3F3;
+}
+@media screen and (max-width: 540.98px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available; */
+        background-color: #F3F3F3;
+    }
 }

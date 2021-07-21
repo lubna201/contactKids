@@ -15,23 +15,21 @@ const Home = () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     return (
         <StylesProvider>
-            <div className="home-container">
-                <div className="home-center">
                     <div>
                         <Container>
-                            <Typography style={{ textAlign: "center", marginTop: "2%" , fontWeight:"700"}} variant="h5" gutterBottom>
+                            <Typography style={{ textAlign: "center", fontWeight:"700"}} variant="h5" gutterBottom>
                                 Contact Us
                             </Typography>
-                            <Grid container spacing={3} style={{ textAlign: "center", marginTop: "4%" }}>
+                            <Grid container spacing={3} style={{ textAlign: "center", marginTop: "2%" }}>
                                 <Grid item xs={12} sm={6} >
                                     <Card className="cardstyle">
                                         <CardContent>
                                             <form noValidate autoComplete="off">
-                                                <TextField id="standard-basic" label="Your Name" style={{ width: "100%", marginTop: "9px" }} />
+                                                <TextField id="standard-basic" label="Your Name" style={{ width: "100%", marginTop: "5px" }} />
                                                 <br />
-                                                <TextField id="standard-basic" label="Your Email" style={{ width: "100%", marginTop: "9px" }} />
+                                                <TextField id="standard-basic" label="Your Email" style={{ width: "100%", marginTop: "5px" }} />
                                                 <br />
-                                                <TextField id="standard-basic" label="Subject" style={{ width: "100%", marginTop: "9px" }} />
+                                                <TextField id="standard-basic" label="Subject" style={{ width: "100%", marginTop: "5px" }} />
                                                 <br />
                                                 <TextField
                                                     id="standard-textarea"
@@ -39,7 +37,7 @@ const Home = () => {
                                                     placeholder="Message"
                                                     multiline
                                                     rows={4}
-                                                    style={{ width: "100%", marginTop: "9px" }}
+                                                    style={{ width: "100%", marginTop: "5px" }}
                                                 />
                                                 <br />
                                                 <Button variant="contained" type="submit" style={{ width: "100%", marginTop: "20px", backgroundColor: "#5abb75",color:"white" }}>Send</Button>
@@ -48,16 +46,11 @@ const Home = () => {
                                     </Card>
                                 </Grid>
                                 <Grid item xs={12} sm={6}>
-                                    <img src={pic} alt="" srcSet="" style={{ width: "100%" }} />
+                                    <img src={pic} alt="" srcSet="" style={{ width: "95%",height:"95%" }} />
                                 </Grid>
                             </Grid>
                         </Container>
                     </div>
-                </div>
-                {/* <div className="what-we-do">
-                
-            </div> */}
-            </div>
         </StylesProvider>
     )
 }
