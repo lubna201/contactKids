@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Assets/Home/Home.css'
-import { StylesProvider } from '@material-ui/core'
+
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
