@@ -25,7 +25,7 @@
     transition: 1.6s ease;
     left: 55vw;
     transform: rotate(150deg);
-    top: -30vh;
+    top: -25vh;
 }
     
 .background-shapes #rec-s0-2 {
@@ -38,18 +38,18 @@
     opacity: 0.1;
     left: 50vw;
     transform: rotate(25deg);
-    top: 112vh;
+    top: 104vh;
 }
     
 .background-shapes #circle-s0 {
     position: absolute;
     border: 3px solid #262E42;
     transition: 1.6s ease;
-    height: 75px;
-    width: 75px;
+    height: 115px;
+    width: 115px;
     border-radius: 150px;
     opacity: 0.1;
-    left: 105vw;
+    left: 103vw;
     top: 7vh;
 }
 
