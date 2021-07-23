@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useRef } from 'react'
 import '../Assets/Home/Home.css'
 // import Container from '@material-ui/core/Container';
 // import Typography from '@material-ui/core/Typography';
@@ -12,8 +12,9 @@ import CardContent from '@material-ui/core/CardContent';
 const Home = () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    
     return (
-        <div className="home-container">
+        <div className="home-container" >
             {/* <Container> */}
             <h2 className="head">
                 Contact Us
@@ -24,18 +25,18 @@ const Home = () => {
                         <CardContent>
                             <form noValidate autoComplete="off">
                                 <TextField id="standard-basic" label="Your Name" 
-                                InputLabelProps={{ style: { fontSize: 20 } }}
-                                inputProps={{ style: { fontSize: 20 } }}
-                                style={{ width: "100%", marginTop: "4%" }} />
+                                InputLabelProps={{ style: { fontSize: "1.2vw" } }}
+                                inputProps={{ style: { fontSize: "1.2vw" } }}
+                                style={{ width: "95%", marginTop: "4%",height: '1.79vw' }} />
                                 <br />
                                 <TextField id="standard-basic" label="Your Email"
-                                InputLabelProps={{ style: { fontSize: 20 } }}
-                                inputProps={{ style: { fontSize: 20 } }}
-                                 style={{ width: "100%", marginTop: "4%" }} />
+                                InputLabelProps={{ style: { fontSize: "1.2vw" } }}
+                                inputProps={{ style: { fontSize: "1.2vw" } }}
+                                 style={{ width: "95%", marginTop: "9%",height: '1.79vw' }} />
                                 <br />
-                                <TextField id="standard-basic" label="Subject" InputLabelProps={{ style: { fontSize: 20 } }}
-                                    inputProps={{ style: { fontSize: 20 } }}
-                                    style={{ width: "100%", marginTop: "4%" }} />
+                                <TextField id="standard-basic" label="Subject" InputLabelProps={{ style: { fontSize: "1.2vw" } }}
+                                    inputProps={{ style: { fontSize: "1.2vw" } }}
+                                    style={{ width: "95%", marginTop: "9%" ,height: '1.79vw'}} />
                                 <br />
                                 <TextField
                                     id="standard-textarea"
@@ -43,12 +44,12 @@ const Home = () => {
                                     placeholder="Message"
                                     multiline
                                     rows={4}
-                                    style={{ width: "100%", marginTop: "4%" }}
-                                    InputLabelProps={{ style: { fontSize: 20 } }}
-                                    inputProps={{ style: { fontSize: 20 } }}
+                                    style={{ width: "95%", marginTop: "9%" }}
+                                    InputLabelProps={{ style: { fontSize: "1.2vw"} }}
+                                    inputProps={{ style: { fontSize: "1.2vw" } }}
                                 />
                                 <br />
-                                <Button variant="contained" type="submit" style={{ width: "100%", marginTop: "4%", marginBottom: "0", backgroundColor: "#5abb75", color: "white",fontSize: 20 }}>Send</Button>
+                                <Button variant="contained" type="submit" style={{ width: "95%", marginTop: "4%", marginBottom: "0", backgroundColor: "#5abb75", color: "white",fontSize: "1.4vw",height: '3.79vw' }}>Send</Button>
                             </form>
                         </CardContent>
                     </Card>
