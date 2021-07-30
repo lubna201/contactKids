@@ -16,12 +16,14 @@ const Home = () => {
     return (
         <div className="home-container" >
             {/* <Container> */}
-            <h2 className="head">
+            <div id="wwa-top">
+            <h2 className="head" >
                 Contact Us
             </h2>
+            </div>
             <Grid container spacing={3} style={{ textAlign: "center", marginTop: "2%" }}>
                 <Grid item xs={12} sm={6} >
-                    <Card className="cardstyle">
+                    <Card className="cardstyle" id="wwa-left">
                         <CardContent>
                             <form noValidate autoComplete="off">
                                 <TextField id="standard-basic" label="Your Name" 
@@ -55,7 +57,7 @@ const Home = () => {
                     </Card>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <img src={pic} alt="" srcSet="" style={{ width: "85%" }} />
+                    <img src={pic} alt="" srcSet="" style={{ width: "85%" }} id="wwa-right"/>
                 </Grid>
             </Grid>
             {/* </Container> */}

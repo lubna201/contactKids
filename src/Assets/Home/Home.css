@@ -11,7 +11,7 @@
 
 .cardstyle{
     /* height: 100%; */
-    margin-left: 2%;
+    /* margin-left: 2%; */
     width: 100%;
     padding-bottom: 0;
     background-image: linear-gradient(25deg, #d6d6d6, #f8f8ee,#c7c3c3);
@@ -23,6 +23,7 @@ body{
     text-align: "center";
     font-weight: 700;
     margin-top: 2%;
+    font-size:3vw;
 }
 @media screen and (max-width: 540.98px) {
     .home-container {

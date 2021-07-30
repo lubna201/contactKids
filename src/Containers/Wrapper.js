@@ -21,6 +21,9 @@ class Wrapper extends React.Component {
       const rec2 = document.querySelectorAll('#rec-s0-2');
       const circle = document.querySelectorAll('#circle-s0');
       const tri = document.querySelectorAll('#tri-s0');
+      const wwaLeft = document.querySelectorAll('#wwa-left');
+      const wwaRight = document.querySelectorAll('#wwa-right');
+      const wwaTop = document.querySelectorAll('#wwa-top');
 
       // Next section reset anim
       const rec1Last = document.querySelectorAll('#rec-s1-1');
@@ -35,6 +38,10 @@ class Wrapper extends React.Component {
       tl.to(rec2, 0.5, {y: -100}, {y: 0})
       tl.to(circle, 0.5, {x: -100}, {x: 0})
       tl.to(tri, 2, {css:{left:0}}, {css:{left:100}})
+
+      gsap.fromTo(wwaLeft, {opacity: 0.5,x: -100}, {opacity: 1,x: 0, duration: 3});
+      gsap.fromTo(wwaRight, {opacity: 0.5,x: 100}, {opacity: 1,x: 0, duration: 3});
+      gsap.fromTo(wwaTop, {opacity: 0.5,Y: 100}, {opacity: 1,Y: 15, duration: 5});
 
       // Next section reset anim
       tl.to(rec1Last, 0.5, {y: 0}, {y: -100})
@@ -54,6 +61,14 @@ class Wrapper extends React.Component {
       const rec2 = document.querySelectorAll('#rec-s0-2');
       const circle = document.querySelectorAll('#circle-s0');
       const tri = document.querySelectorAll('#tri-s0');
+
+      const wwaLeft = document.querySelectorAll('#wwa-left');
+      const wwaRight = document.querySelectorAll('#wwa-right');
+      const wwaTop = document.querySelectorAll('#wwa-top');
+
+      gsap.fromTo(wwaLeft, {opacity: 0.5,x: -100}, {opacity: 1,x: 0, duration: 3});
+      gsap.fromTo(wwaRight, {opacity: 0.5,x: 100}, {opacity: 1,x: 0, duration: 3});
+      gsap.fromTo(wwaTop, {opacity: 0.5,Y: 100}, {opacity: 1,y: 15, duration: 5});
 
       // Animate using gsap library/properties, tri is an svg with css and attribute props
       // Initial section load anim
